@@ -86,7 +86,7 @@ const resProvider = await Promise.race([
 
 // check if provider is working
 if (Number(resProvider.chainId) !== 1) {
-  throw new Error(`Cant connect provider, use "infura" in the config to add an infura id`)
+  throw new Error(`Cant connect provider, use "ethereumRPC" in the config to add an ethereumRPC`)
 }
 
 // setup rollup provider
